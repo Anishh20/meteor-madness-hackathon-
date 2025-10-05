@@ -106,21 +106,23 @@ h3 {
 
 .graph-container {
   max-width: 800px;
+  width: 100%;
   margin: 40px auto;
   background: white;
   padding: 20px;
-  gap:30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
 }
 
-canvas {
-  width: 20rem;
+#sizeChart,#distanceChart{
+  width: 100% !important;
+  height: 175px !important; 
 }
+
 
 .card-container {
   display: flex;
@@ -167,12 +169,12 @@ canvas {
   display: flex;
   justify-content: space-evenly;
   gap: 25px;
-  margin:40px auto;
+  margin: 40px auto;
   flex-wrap: wrap;
 }
 
 .nasa-card {
-  background: white ;
+  background: white;
   border-radius: 15px;
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -196,7 +198,7 @@ canvas {
 }
 
 
-.tnt-graphContainer{
+.tnt-graphContainer {
   max-width: 500px;
   margin: 60px auto;
   background: white;
@@ -233,18 +235,18 @@ canvas {
 footer {
   text-align: center;
   padding: 8px;
-  background:#f1c47c;
+  background: #f1c47c;
   color: black;
   font-size: 0.9rem;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   cursor: pointer;
   color: black;
 }
 
-footer a:hover{
+footer a:hover {
   color: white;
   text-decoration: underline;
 }
