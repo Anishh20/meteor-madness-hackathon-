@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteor Madness | NASA Hackathon</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">☄️ Meteor Madness</div>
+    <ul class="nav-links">
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impacts">Impact</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro" class="section hero">
+    <h1>Welcome to Meteor Madness 🌌</h1>
+    <p>Explore everything about <span id="element" class="purple"></span></p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Meteors & Asteroids ☄️</h2>
+    <p>Asteroids and meteors are cosmic travelers. Some just pass by, while others come close enough to be monitored by
+      NASA.</p>
+
+    <!-- Graph -->
+    <div class="graph-container">
+      <div>
+        <h3>Asteroid’s size</h3>
+        <canvas id="sizeChart"></canvas>
+      </div>
+      <div>
+        <h3>Asteroid’s Distances from Earth</h3>
+        <canvas id="distanceChart"></canvas>
+      </div>
+    </div>
+
+    <h3>Types of Asteroids & Meteors</h3>
+    <div class="card-container">
+      <div class="card">
+        <img src="images\s-type.jpg" alt="S-type Asteroid">
+        <h4>S-type (Silicaceous)</h4>
+        <p>Made of silicate rock, the most common asteroid type.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/c-type.jpg" alt="C-type Asteroid">
+        <h4>C-type (Carbonaceous)</h4>
+        <p>Rich in carbon, very dark, and among the oldest objects.</p>
+      </div>
+
+      <div class="card">
+        <img src="images\uRH7TnT7uCg56H74WHsfWR.jpg" alt="Meteoroid">
+        <h4>Meteoroids</h4>
+        <p>Smaller rocky/metallic fragments that can become meteors or meteorites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="impacts" class="section">
+    <h2>Potential Impacts 🌍</h2>
+    <p>Asteroids can have different effects depending on their size, speed, and impact location.</p>
+    <div class="gandc">
+      <div class="card-container">
+        <div class="card">
+          <img src="images\shooting_starts.webp" alt="shooting-stars">
+          <h4>🌠 Atmospheric Entry</h4>
+          <p>Most small asteroids burn up in Earth’s atmosphere, creating shooting stars.</p>
+        </div>
+        <div class="card">
+          <img src="images\Barringer_Crater_aerial_photo_by_USGS.webp" alt="city-gone">
+          <h4>💥 Regional Damage</h4>
+          <p>Medium asteroids can cause massive explosions, damaging cities.</p>
+        </div>
+        <div class="card">
+          <img
+            src="images\huge-tsunami-wave-destroying-modern-city-great-earthquake-effect-global-warming_1131930-16854.webp"
+            alt="tsunami">
+          <h4>🌊 Tsunamis</h4>
+          <p>Ocean impacts may generate waves that threaten coastal areas.</p>
+        </div>
+        <div class="card">
+          <img src="images\image.webp" alt="extinction">
+          <h4>🌐 Global Extinction</h4>
+          <p>Huge asteroids (>10 km) can cause climate change and wipe out species.</p>
+        </div>
+      </div>
+      <div class="tnt-graphContainer">
+        <div>
+          <h3>Impact Energy</h3>
+          <canvas id="impactChart"></canvas>
+        </div>
+      </div>
+      <div class="impact-note">
+        💡<strong>Note:</strong> 1 Megaton of TNT = ~4.184 × 10<sup>15</sup> Joules — equivalent to the energy released
+        by 1 million tons of TNT, enough to cause massive regional destruction.
+      </div>
+  </section>
+
+
+  <section id="solutions" class="section">
+    <h2>NASA’s Planetary Defense Solutions 🚀</h2>
+    <p>NASA’s mission is to detect, track, and deflect asteroids that could threaten Earth.</p>
+
+    <div class="nasa-grid">
+      <div class="nasa-card">
+        <img src="images\Planetary_Defense_Coordination_Office_seal.png" alt="pdco">
+        <h3>🛰️ Planetary Defense Coordination Office (PDCO)</h3>
+        <p>Responsible for finding, tracking, and mitigating potential asteroid threats.</p>
+      </div>
+
+      <div class="nasa-card">
+        <img src="images\images.jpeg" alt="dart">
+        <h3>🚀 DART Mission</h3>
+        <p>First mission to change an asteroid’s motion in space — proof that deflection works.</p>
+      </div>
+
+      <div class="nasa-card">
+        <img src="images\images (1).jpeg" alt="neowise">
+        <h3>🌌 NEOWISE Mission</h3>
+        <p>Infrared telescope that helps estimate asteroid size, orbit, and composition.</p>
+      </div>
+
+      <div class="nasa-card">
+        <img
+          src="images\The-Quantum-Space-Scout-1-sensor-vehicle^J-set-to-launch-early-next-year-on-the-SpaceX-Transporter-10-mission^J-is-the-first-step-toward-the-QuantumNet-deep-space-communication.jpeg"
+          alt="Sentry">
+        <h3>☄️ Sentry System</h3>
+        <p>Automated system that predicts potential asteroid impacts up to 100 years ahead.</p>
+      </div>
+    </div>
+    <div class="fun-fact">
+      <h3>💡 Fun Fact</h3>
+      <p>NASA’s DART mission successfully tested asteroid deflection by crashing a spacecraft into an asteroid at <b>6.6
+          km/s </b>— proving that humanity can alter an asteroid’s trajectory if needed!</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Anish Kerkar | NASA Hackathon | <a href="https://github.com/Anishh20" target="_blank">GitHub</a> | <a
+      href="https://www.linkedin.com/in/anish-shenvi-kerkar-06a3832b6/" target="_blank">LinkedIn</a> |
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
